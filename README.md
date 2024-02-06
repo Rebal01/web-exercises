@@ -1,2 +1,2 @@
-# Coders,bay web exercises
+# Coders.bay web exercises
 <p> This is not real work just to teach </p>
