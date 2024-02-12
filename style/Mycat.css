@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    text-align: center;
+}
+ul{
+    list-style: none;
+    display: inline-flex;
+}
+li{
+width: 75px;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+.nav{
+    text-align: center;
+    background-color: blueviolet;
+    font-size: 18px;
+}
+#catArticles h1{
+color: rgba(143, 17, 17, 0.671);
+}
+#catArticles:hover{
+color: rgb(226, 10, 215);
+}
+.catss img{
+  height: 50% ;
+  width: 50% ;
+}
+.catss{
+  margin:  25px  25px;
+  
+}
+.ask{
+
+  margin: 8% ;
+}
+.ask h3{
+  font-size: 18px;
+  margin-right: 25%;
+
+
+}
+.ask h4{
+  margin-right: 25%;
+  font-style: italic;
+  font-size: 16px;
+}
