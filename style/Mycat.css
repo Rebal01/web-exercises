@@ -49,3 +49,9 @@ color: rgb(226, 10, 215);
   font-style: italic;
   font-size: 16px;
 }
+.CatPrice::after{
+  content: ' $';
+}
+.red{
+  color: red;
+}
