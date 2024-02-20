@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    text-align: center;
+}
+ul{
+    list-style: none;
+    display: inline-flex;
+}
+li{
+width: 75px;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+.nav{
+    text-align: center;
+    background-color: blueviolet;
+    font-size: 18px;
+}
+section{
+    margin: 20px;
+}
+.main {
+    
+}
+img{
+    margin: 20px ;
+}
