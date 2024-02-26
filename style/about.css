@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    height: 0;
+    text-align: center;
+    background-color: antiquewhite;
+
+}
+ul{
+  list-style: none;
+  display: inline-flex;
+}
+li{
+width: 75px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+.nav{
+  text-align: center;
+  background-color: blueviolet;
+  font-size: 18px;
+}
+section{
+  letter-spacing: 5px;
+}
+.imgPosition{
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: yellow;
+    position: relative;
+    
+
+}
+    
+
+  .cat123,.cat321,.cat456,.cat654,.cat789{    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  center center;
+    width: 200px;
+    height: 200px;
+    border: solid wheat;
+    box-sizing: border-box;
+    position: absolute;
+
+
+}
+  .cat123{
+    background-image: url(https://www.catster.com/wp-content/uploads/2023/11/white-Maine-Coon-cat-at-home_Pixel-Shot_Shutterstock.jpg);
+left: 0px;
+top: 0px;
+}
+  .cat321{
+    background-image: url(https://www.cats.org.uk/media/13136/220325case013.jpg?width=500&height=333.49609375);
+    right: 0px;
+    top: 0px;
+}
+  .cat456{
+    background-image: url(https://www.forbes.com/advisor/wp-content/uploads/2023/09/getty_creative.jpeg-900x510.jpg);
+    right: 0px;
+    bottom: 0px;
+    
+}
+  .cat654{
+    background-image: url(https://www.purina.co.uk/sites/default/files/2023-03/Hero%20Pedigree%20Cats.jpg);
+    left: 0px;
+    bottom: 0px;
+}
+  .cat789{
+    left: 20%;
+    top: 20%;
+    
+    background-image: url(https://static01.nyt.com/images/2023/12/12/climate/12cli-cats/12cli-cats-facebookJumbo.jpg);
+    z-index: 2;
+    
+    
+}

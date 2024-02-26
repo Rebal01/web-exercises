@@ -49,27 +49,45 @@ color: rgb(226, 10, 215);
   font-style: italic;
   font-size: 16px;
 }
-.CatPrice::after{
-  content: ' $';
+.catPosition{
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 50px 50px;
+  padding: 50px;
+  background-color: aqua;
 }
-.red{
-  color: red;
+.cat123,.cat321,.cat456,.cat654,.cat789{
+  position: absolute;
+  height: 50% ;
+  width: 50% ;
+  padding: 10px;
+  border: solid red;
 }
-h1:hover,h3:hover,h4:hover{
-color: rgb(25, 226, 7);
+.cat123{
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+
 }
-div > p{
-  color: rgb(191, 14, 226);
+.cat321{
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+
 }
-h3 ~ h4{
-  color: rgb(190, 7, 226);
+.cat456{
+  top: 10px;
+  right: 10px;
+  z-index: 1;
 }
-p.Helllllooooooo{
-  color: rgb(6, 9, 241);
-  font-size: 25px;
+.cat654{
+  
+  z-index: 2;
 }
-h1 + p{
-  color: rgb(12, 240, 12);
-  font-style: oblique;
-  font-size: larger;
+.cat789{
+  top: 10px;
+  right: 10px;
+  z-index: 1;
 }
+
