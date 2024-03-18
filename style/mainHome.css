@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    
+}
+ul li a{
+    padding: 0 15px;
+    text-decoration: none;
+    color: #7d7ca4;
+    display: inline-block;
+    
+}
+
+li a::after{
+    background-color: #504f8772;
+    display: block;
+    height: 4px;
+    width: 0;
+    content: "";
+    transition: all .5s;
+}
+
+li a:hover::after{
+    width: 100%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    
+
+}
+.bmwcar{
+    max-width:670px;
+    height: auto;
+
+}
+.contentLeft{
+   width: 30%;
+    text-align: center;
+}
+main h1{
+    font-size: 3vh;
+    color: #39393f;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+main h2{
+    font-size: 2vh;
+    font-weight: 400;
+    color: #39393f;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+main p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #39393f;
+    line-height: 26px;
+    letter-spacing: 4px;
+    margin: 30px 0;
+
+}
+.leMore{
+    align-self: center;
+    text-align: center;
+    width: 50%;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(6, 229, 229);
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+.SignUp{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(6, 229, 229);
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+.control{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contentRight{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+/*-------------------------------- media 1110px  --------------------------------*/
+@media (max-width: 1110px) {
+    
+    .contentLeft{
+        width: 30%;
+    }
+    .bmwcar{
+        max-width:590px;
+        
+    }
+    main h1{
+        font-size: 30px;
+    }
+    main h2{
+        font-size: 18px;
+    }
+    main p{
+        font-size: 13px;
+        letter-spacing: 2px;
+    
+    }
+}
+/*-------------------------------- media 900px  --------------------------------*/
+@media (max-width: 925px) {
+    .contentLeft{
+        width: 40%;
+    }
+    .contentRight{
+        width: 60%;
+    }
+    .bmwcar{
+        max-width:450px;
+        
+    }
+    main h1{
+        font-size: 25px;
+    }
+    main h2{
+        font-size: 16px;
+    }
+    main p{
+        font-size: 13px;
+    
+    }
+}
+/*-------------------------------- media 900px  --------------------------------*/
+@media (max-width: 760px) {
+    .contentLeft{
+        width: 40%;
+    }
+    .contentRight{
+        width: 50%;
+    }
+    .bmwcar{
+        max-width:400px;
+        
+    }
+    main h1{
+        font-size: 25px;
+    }
+    main h2{
+        font-size: 16px;
+    }
+    main p{
+        font-size: 13px;
+        margin: 8px 0;
+    
+    }
+}
+/*-------------------------------- media 575px  --------------------------------*/
+@media (max-width: 575px) {
+    header{
+        margin: 100px 0;
+        flex-direction: column;
+    }
+    .logo{
+        align-self: flex-start;
+    }
+    ul{
+        flex-direction: column;
+    }
+    ul li a{
+        padding: 5px 10px;
+    }
+    main{
+        height: calc(100vh - 150px);
+    }
+    .control{
+        height: 50vh;
+        flex-direction: column ;
+    }
+    .contentLeft{
+        width: 80%;
+        margin: 20px 0;
+        
+    }
+    .contentRight{
+        width: 80%;
+        order: -1;
+    }
+    main h1{
+        font-size: 25px;
+    }
+    main h2{
+        font-size: 16px;
+    }
+    main p{
+        font-size: 13px;
+        margin: 10px 0;
+    
+    }
+}
