@@ -2,11 +2,16 @@ body{
     margin: 0;
     padding: 0;
     background-color: antiquewhite;
-    text-align: center;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    flex-direction: column;
 }
 ul{
+    display: flex;
     list-style: none;
-    display: inline-flex;
+    justify-content: center; 
 }
 li{
 width: 75px;
@@ -16,16 +21,38 @@ a {
     text-decoration: none;
 }
 .nav{
-    text-align: center;
+    font-size: 2.5vh ;
     background-color: blueviolet;
-    font-size: 18px;
 }
 section{
+    text-align: center;
     margin: 20px;
 }
-.main {
-    
+.main h1{
+    font-size: 4vh;
 }
-img{
-    margin: 20px ;
+.main p {
+    font-size: 3vh;
+}
+.main img{
+    
+    width: 70%;
+}
+/*--------------------- Media 500 ----------------------*/ 
+@media (max-width: 500px)
+{ 
+ul{
+    flex-direction: column;
+    align-items: center;
+}
+.main h1{
+    font-size: 3vh;
+}
+li{
+padding: 5px;
+}
+.main p {
+    font-size: 2vh;
+}
+
 }
