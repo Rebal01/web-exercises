@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.Container_body{
+    overflow-x: hidden;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1fr,1fr));
+    grid-template-rows:50px auto 50px;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    ;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0 25px;
+}
+ul li a {
+    padding: 0 15px;
+    text-decoration: none;
+    color: #71071a;
+    display: inline-block;
+}
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+.navControl{
+    display: flex;
+    justify-content: center;
+}
+.control{
+    display: flex;
+    
+}
+/*-------------------- HEADER --------------------*/
+header{
+    grid-area:header;
+    background-color: wheat;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1fr,1fr));
+    grid-template-areas:
+    "logo nav nav nav nav nav";
+}
+.logo{
+    grid-area:logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar_ul{
+    grid-area:nav;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+/*-------------------- MAIN --------------------*/
+main{
+    grid-area: main;
+}
+.main_container{
+    width: 90%;
+    background-color: rgba(245, 245, 220, 0.473);
+}
+.head_content>*{
+    margin: 15px 0 30px 0;
+}
+.para_content{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.para_content>*:not(:last-child){
+    margin: 0 0 30px 0;
+}
+.Section_main_content{
+    text-align: left;
+}
+.Section_main_content>.head_content{
+    width: 35%;
+}
+.Section_main_content>.head_content>h1{
+    font-size: 35px;
+}
+.small_titlee{
+    margin: 60px 0 30px 0;
+    letter-spacing: .1666666667em;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.companies_images>*{
+    margin: 15px 0 30px 0;
+}
+.companies_images{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    grid-template-rows:auto ;
+    grid-template-areas:
+    "Company 1 Company 2 Company 3 Company 4"
+    ;
+}
+.Company_1{
+    grid-area: Company 1;
+}
+.Company_2{
+    grid-area: Company 2;
+}
+.Company_3{
+    grid-area: Company 3;
+}
+.Company_4{
+    grid-area: Company 4;
+}
+/*-------------------- FOOTER --------------------*/
+footer{
+    grid-area:footer;
+}
+.footer_ul{
+    display: flex;
+    margin: 15px 0 30px 0;
+    
+}
