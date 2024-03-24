@@ -4,7 +4,7 @@ const prompt = (query) => new Promise((resolve) => rl.question(query, resolve));
 rl.on('close', () => process.exit(0));
 
 async function execute() {
-	const user = await prompt("Enter one letter from A to Z: ");
+	const user =  await prompt("Enter one letter from A to Z: ");
     switch(user){
         case 'a':
         case 'b':
@@ -33,6 +33,7 @@ async function execute() {
         case 'w':
         case 'z':
         console.log("That's right, it's a letter. Good job, boy",user);
+        break;
         default:
         console.log("This is not a letter",user," idiot. You must learn the letters");
         break;

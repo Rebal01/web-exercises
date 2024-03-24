@@ -9,6 +9,7 @@ async function execute() {
             const Number1 = Number(await prompt("Put your first number: "));
             const Number2 = Number(await prompt("Put your second number: "));
                 if (isNaN(Number1) && isNaN(Number2)) {
+                    console.log("The input you entered is incorrect. ");
                 return ;
                 }
 	const tag = await prompt("Choose one of the calculations '+,-,/,*': ");
